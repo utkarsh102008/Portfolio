@@ -1,10 +1,29 @@
-body {
+:root{
+  --bg:#1334a9; --text:#f5f5f7; --muted:#a1a1aa;
+  --card:#ffffff0f; --border:rgba(255,255,255,.12);
+  --g1:#2877ef; --g2:#0033FF; --g3:#977DFF;
+  --grad:linear-gradient(135deg,var(--g1),var(--g2) 50%,var(--g3));
+  --radius:24px;
+}body {
     font-family: 'Arial', sans-serif;
-    color: #dde4eb;
+    color: var(--text);
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
+    background: var(--bg);
 }
 .section-home{
     text-align: center;
+}
+.grad{
+    background: var(--grad);-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eyebrow{
+    font-size: .8rem;
+    color: var(--g3);
+}
+#first-hello{
+    font-size: 1.2rem;
+    color: var(--g3);
+    align-items: left,12px;
 }
