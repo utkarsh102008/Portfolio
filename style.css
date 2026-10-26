@@ -166,3 +166,15 @@ a{
     background: var(--grad);
     animation: fill 1.4s ease-out;
 }
+.footer{
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+}
+#connect{
+    text-align: center;
+    padding: 2rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
