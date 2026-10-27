@@ -158,14 +158,7 @@ a{
 .timeline h3{
     font-size: 1.4rem;
 } 
-.skill-top{
-     display: block;
-    height: 100%;
-    width: var(--level);
-    border-radius: 999px;
-    background: var(--grad);
-    animation: fill 1.4s ease-out;
-}
+
 .footer{
     text-align: center;
     padding: 4rem 2rem;
@@ -177,4 +170,31 @@ a{
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
+}
+.bar{
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,.1);   
+    overflow: hidden;
+}
+.bar span{
+    display: block;
+    height: 100%;
+    width: var(--level);                
+    border-radius: 999px;
+    background: var(--grad);
+    animation: fill 1.4s ease-out;
+}
+@keyframes fill{
+    from{ width: 0; }
+}
+.skill-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+    font-size: 1.1rem;
+}
+.skills-grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
